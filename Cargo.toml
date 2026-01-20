@@ -1,0 +1,19 @@
+[package]
+name = "astra-remote"
+version = "1.0.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.42", features = ["full"] }
+axum = "0.7"
+tower = "0.5"
+tower-http = { version = "0.6", features = ["cors"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+enigo = "0.1"
+lazy_static = "1.5.0"
+[[bin]]
+name = "test_enigo"
+path = "test_enigo.rs"
