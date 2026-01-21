@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Astra Gesture Control
+Comment=Remote control your desktop with gestures from your mobile device
+Exec=astra-gui
+Icon=astra-gesture-control
+Terminal=false
+Categories=Utility;Network;RemoteAccess;
+Keywords=remote;control;gesture;mouse;keyboard;mobile;
+StartupNotify=true
