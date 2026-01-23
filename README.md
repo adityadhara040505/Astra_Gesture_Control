@@ -57,6 +57,34 @@ This will:
 - From application menu: Search for "Astra Gesture Control"
 - From terminal: `astra-gui`
 
+### Production Packages
+
+**For production deployment and ISO integration, see [PACKAGING.md](PACKAGING.md)**
+
+Quick package builds:
+```bash
+# Build all package formats
+./build-all.sh
+
+# Build specific format
+./build-deb.sh        # Debian/Ubuntu (.deb)
+./build-rpm.sh        # Fedora/RHEL (.rpm)
+./build-appimage.sh   # Portable AppImage
+
+# System-wide installation (requires root)
+sudo ./install-system.sh
+```
+
+**Available Package Formats:**
+- 📦 **Debian Package** (.deb) - For Ubuntu, Debian, Mint, Pop!_OS
+- 📦 **RPM Package** (.rpm) - For Fedora, RHEL, CentOS, openSUSE
+- 📦 **AppImage** - Portable, runs on any Linux distribution
+- 📦 **Tarball** (.tar.gz) - Manual installation archive
+
+**ISO Integration:**
+See [`packaging/iso-integration/README.md`](packaging/iso-integration/README.md) for detailed instructions on including Astra in custom Linux distributions.
+
+
 ## 📱 Mobile Connection
 
 1. Launch the Astra GUI application

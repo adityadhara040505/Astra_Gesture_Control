@@ -1,0 +1,16 @@
+[Unit]
+Description=Install Astra Gesture Control on First Boot
+After=network.target graphical.target
+ConditionPathExists=!/var/lib/astra-installed
+ConditionPathExists=/opt/Astra_Gesture_Control/install-system.sh
+
+[Service]
+Type=oneshot
+ExecStart=/opt/Astra_Gesture_Control/install-system.sh
+ExecStartPost=/usr/bin/touch /var/lib/astra-installed
+StandardOutput=journal
+StandardError=journal
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

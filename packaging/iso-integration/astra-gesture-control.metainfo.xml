@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- AppStream metadata for software centers -->
+<component type="desktop-application">
+  <id>com.astra.GestureControl</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  <name>Astra Gesture Control</name>
+  <summary>Control your desktop with mobile gestures</summary>
+  
+  <description>
+    <p>
+      Astra Gesture Control allows you to control your desktop computer
+      using gestures from your mobile device. Turn your phone into a
+      wireless mouse, keyboard, and remote control.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Wireless mouse control with adjustable sensitivity</li>
+      <li>Gesture-based scrolling and clicking</li>
+      <li>Virtual keyboard input from mobile device</li>
+      <li>QR code for easy mobile connection</li>
+      <li>Real-time activity monitoring</li>
+      <li>Beautiful, modern user interface</li>
+    </ul>
+  </description>
+  
+  <launchable type="desktop-id">astra-gesture-control.desktop</launchable>
+  
+  <screenshots>
+    <screenshot type="default">
+      <caption>Main application window with QR code and controls</caption>
+    </screenshot>
+  </screenshots>
+  
+  <url type="homepage">https://github.com/adityadhara040505/Astra_Gesture_Control</url>
+  <url type="bugtracker">https://github.com/adityadhara040505/Astra_Gesture_Control/issues</url>
+  
+  <provides>
+    <binary>astra-gui</binary>
+    <binary>astra-remote</binary>
+  </provides>
+  
+  <releases>
+    <release version="1.0.0" date="2026-01-23">
+      <description>
+        <p>Initial release with core features:</p>
+        <ul>
+          <li>Desktop GUI application</li>
+          <li>Mouse and keyboard control</li>
+          <li>QR code connection</li>
+          <li>Adjustable sensitivity settings</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  
+  <categories>
+    <category>Utility</category>
+    <category>Network</category>
+    <category>RemoteAccess</category>
+  </categories>
+  
+  <keywords>
+    <keyword>remote</keyword>
+    <keyword>control</keyword>
+    <keyword>gesture</keyword>
+    <keyword>mouse</keyword>
+    <keyword>keyboard</keyword>
+    <keyword>mobile</keyword>
+  </keywords>
+  
+  <developer_name>Astra Team</developer_name>
+  
+  <content_rating type="oars-1.1" />
+</component>

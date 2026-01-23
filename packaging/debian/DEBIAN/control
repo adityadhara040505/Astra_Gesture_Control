@@ -1,0 +1,15 @@
+Package: astra-gesture-control
+Version: 1.0.0
+Section: utils
+Priority: optional
+Architecture: amd64
+Maintainer: Astra Team <astra@example.com>
+Description: Remote control your desktop with gestures
+ Astra Gesture Control allows you to control your desktop computer
+ using gestures from your mobile device. Features include mouse control,
+ keyboard input, and customizable sensitivity settings.
+ .
+ This package includes both the server component and a graphical
+ user interface for easy configuration and monitoring.
+Depends: libc6 (>= 2.31), libgcc-s1 (>= 3.0), libstdc++6 (>= 11)
+Homepage: https://github.com/adityadhara040505/Astra_Gesture_Control

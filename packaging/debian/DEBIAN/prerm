@@ -1,0 +1,10 @@
+#!/bin/bash
+# Pre-removal script for Astra Gesture Control
+
+set -e
+
+# Stop any running instances
+pkill -f astra-remote || true
+pkill -f astra-gui || true
+
+exit 0

@@ -1,0 +1,24 @@
+#!/bin/bash
+# Post-installation script for Astra Gesture Control
+
+set -e
+
+# Update desktop database
+if command -v update-desktop-database &> /dev/null; then
+    update-desktop-database /usr/share/applications || true
+fi
+
+# Update icon cache
+if command -v gtk-update-icon-cache &> /dev/null; then
+    gtk-update-icon-cache -f -t /usr/share/icons/hicolor || true
+fi
+
+# Update MIME database
+if command -v update-mime-database &> /dev/null; then
+    update-mime-database /usr/share/mime || true
+fi
+
+echo "✅ Astra Gesture Control installed successfully!"
+echo "   Launch from your application menu or run: astra-gui"
+
+exit 0

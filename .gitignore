@@ -16,3 +16,12 @@ Thumbs.db
 # Backup files
 *.bak
 *.tmp
+
+# Package build artifacts
+/build
+/dist
+*.deb
+*.rpm
+*.AppImage
+*.tar.gz
+SHA256SUMS
